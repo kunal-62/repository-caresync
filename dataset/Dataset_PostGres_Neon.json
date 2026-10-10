@@ -1,0 +1,12 @@
+{
+	"name": "Dataset_PostGres_Neon",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_PostgreSql_Neon",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "PostgreSqlV2Table",
+		"schema": []
+	}
+}
