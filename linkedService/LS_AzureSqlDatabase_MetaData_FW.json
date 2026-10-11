@@ -1,0 +1,23 @@
+{
+	"name": "LS_AzureSqlDatabase_MetaData_FW",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "metadata-fw-srv1.database.windows.net",
+			"database": "free-sql-db-metadata-fw",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "md-fw-admin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LinkedService_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "MetaData-FW-DB-pass"
+			}
+		}
+	}
+}
